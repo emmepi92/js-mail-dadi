@@ -28,7 +28,7 @@ if (computerNumber === userNumber) {
    result = "I due numeri generati sono uguali";
 } else if (computerNumber > userNumber) {
    result = "Ha vinto il computer!";
-} else {    
+} else {  // = (computerNumber < userNumber)
    result = "Ha vinto il giocatore!";
 }
 
