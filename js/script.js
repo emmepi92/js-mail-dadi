@@ -24,12 +24,12 @@ var userNumber = Math.floor(Math.random()*6 + 1);
 var outputHtml = document.getElementById("result-2");
 var result;
 
-if (computerNumber === userNumber) {
-   result = "I due numeri generati sono uguali";
+if (computerNumber < userNumber) {
+   result = "Ha vinto il giocatore!";
 } else if (computerNumber > userNumber) {
    result = "Ha vinto il computer!";
-} else {  // = (computerNumber < userNumber)
-   result = "Ha vinto il giocatore!";
+} else {  // = (computerNumber === userNumber)
+   result = "Nessun vincitore :(";
 }
 
 outputHtml.innerHTML = result;
